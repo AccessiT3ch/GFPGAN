@@ -90,18 +90,18 @@ If you want to use the original model in our paper, please see [PaperModel.md](P
     ```bash
     # Install basicsr - https://github.com/xinntao/BasicSR
     # We use BasicSR for both training and inference
-    pip install basicsr
+    python3 -m pip install basicsr
 
     # Install facexlib - https://github.com/xinntao/facexlib
     # We use face detection and face restoration helper in the facexlib package
-    pip install facexlib
+    python3 -m pip install facexlib
 
-    pip install -r requirements.txt
+    python3 -m pip install -r requirements.txt
     python setup.py develop
 
     # If you want to enhance the background (non-face) regions with Real-ESRGAN,
     # you also need to install the realesrgan package
-    pip install realesrgan
+    python3 -m pip install realesrgan
     ```
 
 ## :zap: Quick Inference
@@ -117,11 +117,11 @@ wget https://github.com/TencentARC/GFPGAN/releases/download/v1.3.0/GFPGANv1.3.pt
 **Inference!**
 
 ```bash
-python inference_gfpgan.py -i inputs/whole_imgs -o results -v 1.3 -s 2
+python3 inference_gfpgan.py -i inputs/whole_imgs -o results -v 1.3 -s 2
 ```
 
 ```console
-Usage: python inference_gfpgan.py -i inputs/whole_imgs -o results -v 1.3 -s 2 [options]...
+Usage: python3 inference_gfpgan.py -i inputs/whole_imgs -o results -v 1.3 -s 2 [options]...
 
   -h                   show this help
   -i input             Input image or folder. Default: inputs/whole_imgs
